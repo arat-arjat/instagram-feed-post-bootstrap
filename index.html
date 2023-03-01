@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Instagran Feed Post</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+  
+  <div class="container"> 
+    <nav class="navbar bg-body-tertiary">
+      <div class="container">
+              <a class="navbar-brand">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                  </svg>
+                 Instagram
+              </a> 
+      <div class="d-flex justify-content-between ">
+        <button type="button" class="btn btn-success mx-3" data-bs-toggle="modal" data-bs-target="#modal1">
+                create a new post
+        </button>
+
+        <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="modal1">Create a new Post</h1>
+                <button type="button" class="btn-close" class="mx-1" data-bs-dismiss="modal" aria-label="Close" ></button>
+              </div>
+
+              <div class="modal-body d-flex flex-column">
+                <p>caption:</p>
+                <label for="sube un post" class="form-label"> <textarea name="canasverdes" id="canasverdes" cols="30" rows="2"> Sube un post</textarea>
+                </label>
+                <div class="d-flex">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera mx-2" viewBox="0 0 16 16">
+                  <path d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1v6zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2z"/>
+                  <path d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                  <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                  <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                </svg>
+              </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success">Publish</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dropdown-center">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear-wide-connected" viewBox="0 0 16 16">
+              <path d="M7.068.727c.243-.97 1.62-.97 1.864 0l.071.286a.96.96 0 0 0 1.622.434l.205-.211c.695-.719 1.888-.03 1.613.931l-.08.284a.96.96 0 0 0 1.187 1.187l.283-.081c.96-.275 1.65.918.931 1.613l-.211.205a.96.96 0 0 0 .434 1.622l.286.071c.97.243.97 1.62 0 1.864l-.286.071a.96.96 0 0 0-.434 1.622l.211.205c.719.695.03 1.888-.931 1.613l-.284-.08a.96.96 0 0 0-1.187 1.187l.081.283c.275.96-.918 1.65-1.613.931l-.205-.211a.96.96 0 0 0-1.622.434l-.071.286c-.243.97-1.62.97-1.864 0l-.071-.286a.96.96 0 0 0-1.622-.434l-.205.211c-.695.719-1.888.03-1.613-.931l.08-.284a.96.96 0 0 0-1.186-1.187l-.284.081c-.96.275-1.65-.918-.931-1.613l.211-.205a.96.96 0 0 0-.434-1.622l-.286-.071c-.97-.243-.97-1.62 0-1.864l.286-.071a.96.96 0 0 0 .434-1.622l-.211-.205c-.719-.695-.03-1.888.931-1.613l.284.08a.96.96 0 0 0 1.187-1.186l-.081-.284c-.275-.96.918-1.65 1.613-.931l.205.211a.96.96 0 0 0 1.622-.434l.071-.286zM12.973 8.5H8.25l-2.834 3.779A4.998 4.998 0 0 0 12.973 8.5zm0-1a4.998 4.998 0 0 0-7.557-3.779l2.834 3.78h4.723zM5.048 3.967c-.03.021-.058.043-.087.065l.087-.065zm-.431.355A4.984 4.984 0 0 0 3.002 8c0 1.455.622 2.765 1.615 3.678L7.375 8 4.617 4.322zm.344 7.646.087.065-.087-.065z"/>
+            </svg>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#">profile</a></li>
+            <li><a class="dropdown-item" href="#">Accesibility</a></li>
+            <li><a class="dropdown-item" href="#">Privacity and Data</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#" > <p class="text-danger">Log out</p></a></li>
+          </ul>
+        </div>
+      </div>
+     </nav>
+
+      <!--inicio tab -->
+      <div class="container-fluid">
+      <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-square-fill" viewBox="0 0 16 16">
+              <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/>
+            </svg>
+
+            
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid-3x3-gap-fill" viewBox="0 0 16 16">
+              <path d="M1 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2zM1 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V7zM1 12a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2z"/>
+            </svg>  
+          </button>
+        </li>
+      </ul>
+      </div>
+      <!--fin tab-->
+
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"> 
+          
+          <!--aqui inicia instagran feed-->
+        
+          <div class="mx-auto" style=" height: auto;">
+            
+            <div class="container-fluid">
+              <div class="p-2 mx-auto col col-sm-12 col-md-6">
+                <div class="row row-cols-12 border border-2 light-subtle">
+                  <div class="d-flex justify-content-between">
+                       <h4>
+                       punta arena
+                      </h4> 
+                     <p class="h6"> 1/3 </p>
+                   </div>
+                   <img class="img-responsive" src="https://i.guim.co.uk/img/media/0593b843815bed0efb2b9b6e4da1eb674c6e8aa5/0_374_5605_3363/master/5605.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=7569b52fd4b0774d0ed4e38b0b2a82b4" alt="ciudad">
+                   <p class="h5"> 212 like </p>
+                   <p> La ciudad más al sur del continente americano, en el inviernos sus dias son más cortos y en el vernano son más largos</p>
+                 </div>
+             </div>
+     
+            
+            
+             <div class="p-2 mx-auto col-6">
+               <div class="row row-col border border-2 light-subtle">
+                 <div class="d-flex justify-content-between">
+                     <h4>
+                      Cementerio jardin Sara braun 
+                     </h4> 
+                    <p class="h6"> 2/3 </p>
+                 </div>
+                   <img class="img-responsive" src="https://a.travel-assets.com/findyours-php/viewfinder/images/res40/121000/121040-Punta-Arenas.jpg" alt="cementerio jardin">
+                   <p class="h5"> 112 like </p>
+                   <p> el cementerio se emplaza en la Av. Bulnes presenta un tramo arbolado con abedules y cipreses canadienses. Sus elementos arquitectónicos se integran como un conjunto armónico y homogéneo. </p>
+                 </div>
+           
+             </div>
+        
+     
+             <div class="p-2 mx-auto col-6">
+               <div class="row row-col border border-2 light-subtle">
+                 <div class="d-flex justify-content-between">
+                   <h4>
+                    Estrecho de magallanes
+                   </h4>
+                  <p class="h6">3/3</p>
+                 </div>
+                  <img class="img-responsive" src="https://a.travel-assets.com/findyours-php/viewfinder/images/res60/121000/121055-Punta-Arenas.jpg" alt="monumento batalla estrecho de magallanes">
+                  <p class="h5"> 400 like</p>
+                  <p>El Monumento a los Tripulantes de la Goleta Ancud está emplazado en la intersección de Av. Colón con Costanera del Estrecho, en la ciudad de Punta Arenas. Dedicado a la conmemoración de la toma de posesión efectiva del estrecho de Magallanes por parte del Estado de Chile el 21 de septiembre de 1843.</p>
+                </div>
+             </div>
+           </div>
+       
+ 
+          </div>
+        
+
+       <!--aqui termina instagran feed-->
+        </div>
+
+        
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"> 
+          
+          <div class="container-fluid">
+
+            <div class="row"> 
+             <div class="col">
+              <div class=" mt-4 bg-primary">
+                <img class="img-fluid" src="https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/0b/d8/a1/1e.jpg" alt="cenote">
+              </div>
+              </div>
+          
+    
+           
+              <div class="col">
+                <div class=" mt-4 bg-primary">
+                  <img class="img-fluid" src="https://www.vinimages.com.au/wp-content/uploads/2020/01/torres-del-paine-travel-photography-vin-images-034-1160x771.jpg" alt=" glaciar los perros">
+                </div>
+              </div>
+          
+    
+         
+              <div class="col">
+                <div class=" mt-4 bg-primary">
+                  <img class="img-fluid" src="https://library.sportingnews.com/styles/crop_style_16_9_mobile_2x/s3/2022-04/Graphic-for-Miguel-Cabrera-reaching-3%2C000-hit-mark-%2816x9%29%20%281%29.jpg?itok=vC56g87a" alt="beisbol">
+                </div>
+              </div>
+            </div>
+    
+            <div class="row"> 
+              <div class="col">
+                <div class=" mt-4 bg-primary">
+                  <img class="img-fluid" src="https://bigfootpatagonia.com/wp-content/uploads/brizy/6274/assets/images/iW=657&iH=433&oX=40&oY=0&cW=576&cH=433/Captura-de-pantalla-2019-05-27-a-las-11.05.31.png" alt="Escalada en hielo">
+                </div>
+              </div>
+          
+    
+           
+            <div class="col">
+                  <div class=" mt-4 bg-primary">
+                  <img class="img-fluid" src="https://elaragueno.com.ve/wp-content/uploads/2022/01/1-18-526x400.jpg" alt="salinas de cumaragua">
+                </div>
+                </div>
+          
+    
+         
+                <div class="col">
+                  <div class=" mt-4 bg-primary">
+                   <img class="img-fluid" src="https://www.assocarenews.it/wp/wp-content/uploads/2021/01/GlobuliBianchi-Leucociti.jpg" alt="elementos de la sangre">
+                 </div>
+              </div>
+              </div>
+    
+              <div class="row"> 
+                  <div class="col">
+                    <div class="mt-4 bg-primary">
+                      <img class="img-fluid" src="https://www.tenischile.com/v2/wp-content/uploads/chile_open_2023_2.jpeg" alt="tenis">
+                    </div>
+                  </div>
+          
+    
+           
+                    <div class="col">
+                      <div class=" mt-4 bg-primary">
+                       <img class="img-fluid" src="https://live.staticflickr.com/4290/34336660143_c80d25a53f_b.jpg" alt="crro el plomo">
+                      </div>
+                    </div>
+          
+    
+         
+                    <div class="col">
+                      <div class=" mt-4 bg-primary">
+                        <img class="img-fluid" src="http://casamayaelyaque.com/wp-content/uploads/2021/10/Faro-Punta-Ballenas-007-Pampatar-Isla-Margarita-Venezuela-Casa-Maya-Hostel-Hostal_50.webp" alt="faro la punta">
+                     </div>
+                    </div>
+              </div>
+        </div>
+      
+
+        </div>
+    </div>
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
